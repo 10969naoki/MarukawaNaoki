@@ -1,0 +1,419 @@
+html{
+    font-size: 100%;
+}
+
+body{
+    color: #24292e;
+    font-family: "M PLUS Rounded 1c";
+    height: 100vh;
+    font-weight: 400;
+}
+
+main{
+    padding: 50px;
+}
+
+main{
+    font-weight: 400;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+.site-title{
+    line-height: 1px;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+.site-title a{
+    color: #24292e;
+    display: block;
+}
+
+.sec-title{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+/* ヘッダー（ハンバーガーメニュー）*/
+nav{
+    width: 220px;
+    display: block;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 0;
+}
+
+.open nav{
+    left: 0;
+    opacity: 1;
+}
+
+nav .inner{
+    padding: 25px;
+}
+
+nav .inner ul{
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+}
+
+nav .inner ul li{
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
+
+nav .inner ul li a{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 1rem;
+    transition-duration: 0.2s;
+}
+
+nav .inner ul li a:hover{
+    background-color: #e4e4e4;
+}
+
+.toggle-btn{
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.toggle-btn span{
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.5s;
+    border-radius: 4px;
+}
+
+.toggle-btn span:nth-child(1){
+    top: 4px;
+}
+.toggle-btn span:nth-child(2){
+    top: 14px;
+}
+.toggle-btn span:nth-child(3){
+    bottom: 4px;
+}
+
+.open .toggle-btn span{
+    background-color: #fff;
+}
+
+.open .toggle-btn span:nth-child(1){
+    transform: translateY(10px) rotate(315deg);
+}
+
+.open .toggle-btn span:nth-child(2){
+   opacity: 0;
+}
+
+.open .toggle-btn span:nth-child(3){
+    transform: translateY(-10px) rotate(-315deg);
+}
+
+#mask{
+    display: none;
+    transition: all 0.5s;
+}
+
+.open #mask{
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#header{
+    max-width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 4%;
+    height: 170px;
+}
+
+#header ul{
+    padding: 0;
+    align-items: center;
+}
+
+#header ul li{
+    font-size: 0.7rem;
+    margin-left: 30px;
+}
+
+#header ul li a{
+    color: #24292e;
+    transition: all 0.3s;
+}
+
+#header ul li a:hover{
+    opacity: 0.5;
+    background-color: #c8c8c8;
+}
+
+#header li img.icon{
+    width: 30px;
+}
+
+/* ファーストビュー */
+#first-view{
+    margin-bottom: 80px;
+}
+
+#first-view img{
+    width: 100%;
+    max-width: 1920px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* アバウト */
+#about ul{
+    margin-bottom: 30px;
+}
+
+#about ul li{
+    margin-bottom: 3px;
+}
+
+#about ul li:first-child{
+    margin-bottom: 30px;
+}
+
+/* ワークス */
+#works ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#works ul li{
+    width: 31%;
+    margin-bottom: 23px;
+}
+
+#works ul li img{
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 10%;
+}
+
+#works ul li img:hover{
+    transform: scale(1.2, 1.2);
+    opacity: 0.7;
+}
+
+/* ニュース */
+#news dl{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #c8c8c8;
+    margin-bottom: 20px;
+}
+
+#news dt{
+    width: 20%;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 15px;
+}
+
+#news dd{
+    width: 80%;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 15px;
+}
+
+/* コンタクト */
+#contact p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact dt{
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+#contact dd{
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+#contact dd input,
+#contact dd textarea{
+    width: 100%;
+    border: 1px solid #c8c8c8;
+    padding: 10px;
+}
+
+#contact dd textarea{
+    height: 10rem;
+}
+
+#contact .button{
+    text-align: center;
+}
+
+#contact .button input{
+    border: 1px solid #24292e;
+    background-color: #24292e;
+    width: 200px;
+    padding: 15px 0;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#contact .button input:hover{
+    background-color: #fff;
+    color: #24292e;
+}
+
+/* フッター */
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color: #24292e;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2){
+    font-size: 17px;
+    color: #24292e;
+    width: 500px;
+    text-align: center;
+}
+
+.end{
+    color: #24292e;
+    margin-top: 100px;
+    font-size: 16px;
+}
+/* sp */
+@media screen and (max-width: 600px){
+    .site-title{
+        margin: 20px;
+    }
+    /* ヘッダー */
+    #header{
+        flex-direction: column;
+        height: auto;
+        line-height: 40px;
+        margin-top: 20px;;
+    }
+
+    #header li{
+        font-size: 0.6rem;
+        margin-left: 10px;
+    }
+
+    #header li img.icon{
+        width: 20px;
+        margin-top: 20px;
+    }
+
+    /* ワークス */
+    #works ul{
+        flex-direction: column;
+    }
+
+    #works ul li{
+        width: 100%;
+    }
+
+    /* ニュース */
+    #news dl{
+        flex-direction: column;
+    }
+
+    #news dt{
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    #news dd{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    /* コンタクト */
+    #contact dl{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #contact dt{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #contact dd{
+        width: 100%;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NaokiMarukawa">
+   <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <title>NaokiMarukawa</title>
+</head>
+<body>
+    <!-- ヘッダー -->
+        <div id="navArea">
+            <nav>
+                <div class="inner">
+                    <ul>
+                        <li class="active"><a href="#about">ABOUT</a>
+                        </li>
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="#news">NEWS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li>
+                            <a href="https://www.Facebook.com" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            ><img src="./images/facebook.png" alt="Facebook" class="icon"
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div id="mask"></div>
+
+            <main>
+                <h1>Naoki Marukawa</h1>
+            </main>
+            
+            <script src="./script.js"></script>
+        </div>
+    <!-- ファーストビュー -->
+    <section id="first-view">
+        <picture>
+            <source media="(max-width: 600px)" srcset="./images/first-view.jpg">
+            <img src="./images/first-view.jpg" alt="first-view">
+        </picture>
+    </section>
+    <!-- アバウト -->
+    <section id="about" class="wrapper">
+        <h2 class="sec-title">ABOUT</h2>
+        <ul>
+            <li>Naoki Marukawa</li>
+            <li>サーバー運用監視オペレーター</li>
+            <li>データセンターにて、300台以上のサーバーを24時間365日監視しております。</li>
+            <li>メールアドレス：199999naoki@gmail.com</li>
+        </ul>
+        <p>
+            監視業務の他に、手順書作成および修正、議事録作成、マクロ作成を得意としております。<br>
+            また、HTML/CSS, JavaScriptを用いたWeb制作にも力を入れて取り組んでおります。
+        </p>
+    </section>
+    <!-- ワークス -->
+    <section id="works" class="wrapper">
+        <h2 class="sec-title">WORKS</h2>
+        <ul>
+            <li><img src="./images/works1.jpg" alt="works1"></li>
+            <li><img src="./images/works2.jpg" alt="works2"></li>
+            <li><img src="./images/works3.jpg" alt="works3"></li>
+            <li><img src="./images/works4.jpg" alt="works4"></li>
+            <li><img src="./images/works5.jpg" alt="works5"></li>
+            <li><img src="./images/works6.jpg" alt="works6"></li>
+            <li><img src="./images/works7.jpg" alt="works7"></li>
+            <li><img src="./images/works8.jpg" alt="works8"></li>
+            <li><img src="./images/works9.jpg" alt="works9"></li>
+        </ul>
+    </section>
+    <!-- ニュース -->
+    <section id="news" class="wrapper">
+        <h2 class="sec-title">NEWS</h2>
+        <dl>
+            <dt>2024/02/22</dt>
+            <dd>本サイトをリリースしました</dd>
+            <dt>2024/02/21</dt>
+            <dd>保護猫を引き取りました</dd>
+            <dt>2024/02/20</dt>
+            <dd>Facebookアカウントを開設しました</dd>
+            <dt>2024/02/19</dt>
+            <dd>チャンネル登録よろしくお願いします</dd>
+            <dt>2024/02/18</dt>
+            <dd>YouTubeチャンネルを開設しました</dd>
+        </dl>
+    </section>
+    <!-- コンタクト -->
+    <section id="contact" class="wrapper">
+        <h2 class="sec-title">contact</h2>
+        <p>お問い合わせは以下のフォームから</p>
+        <form action="#" method="post">
+        <dl>
+            <dt><label for="name">お名前</label></dt>
+            <dd><input type="text" id="name" /></dd>
+            <dt><label for="email">メールアドレス</label></dt>
+            <dd><input type="email" id="email" /></dd>
+            <dt><label for="content">内容</label></dt>
+            <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
+        </dl>
+        <div class="button"><input type="submit" value="送信"></div>
+    </form>
+    </section>
+    <!-- フッター -->
+    <footer>
+        <p>Naoki Marukawa</p>
+        <p>-Please subscribe my YouTube Channel-</p>
+        <p class="end">CopyRight@NaokiMarukawa</p>
+    </footer>
+</body>
+</html>
